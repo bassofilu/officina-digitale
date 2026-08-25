@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Officina Digitale — Assistenza IT per PMI a Verona e Mantova</title>
+<meta name="description" content="Gestione informatica per piccole imprese: assistenza remota, backup, sicurezza. Audit gratuito di 30 minuti. Verona e Mantova.">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:title" content="Officina Digitale — Il reparto IT della tua PMI">
+<meta property="og:description" content="Audit di sicurezza gratuito di 30 minuti per la tua azienda. Verona e Mantova.">
+<meta property="og:image" content="assets/logo_orizzontale.png">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --navy:#0F172A; --navy2:#1E293B; --teal:#1FBD93; --teal-b:#2DD4A7;
+    --ink:#272A3B; --grey:#64748B; --light:#F1F5F9; --white:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.6;background:var(--white)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* HERO */
+  .hero{background:var(--navy);color:var(--white);padding:72px 0 88px}
+  .hero .wrap{display:flex;align-items:center;gap:48px;flex-wrap:wrap}
+  .hero-txt{flex:1 1 420px}
+  .hero-img{flex:0 1 380px;text-align:center}
+  .hero-img img{max-width:100%;height:auto;border-radius:16px}
+  h1{font-size:clamp(30px,5vw,46px);line-height:1.15;font-weight:800;margin-bottom:18px}
+  h1 em{color:var(--teal);font-style:normal}
+  .sub{font-size:19px;color:#CBD5E1;margin-bottom:32px;max-width:520px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:15px 28px;border-radius:10px;font-weight:700;font-size:17px;text-decoration:none;transition:transform .12s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--teal);color:var(--navy)}
+  .btn-ghost{border:2px solid #334155;color:#E2E8F0}
+  .badge{display:inline-block;background:rgba(31,189,147,.14);color:var(--teal-b);border:1px solid rgba(31,189,147,.4);padding:6px 14px;border-radius:99px;font-size:14px;font-weight:600;margin-bottom:20px}
+
+  /* SEZIONI */
+  section{padding:72px 0}
+  h2{font-size:clamp(24px,3.6vw,34px);font-weight:800;margin-bottom:14px;text-align:center}
+  .lead{text-align:center;color:var(--grey);max-width:640px;margin:0 auto 44px;font-size:17px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+  .card{background:var(--white);border:1px solid #E2E8F0;border-radius:14px;padding:26px}
+  .card .ico{font-size:30px;margin-bottom:12px}
+  .card h3{font-size:19px;margin-bottom:8px}
+  .card p{font-size:15px;color:var(--grey)}
+
+  .why{background:var(--light)}
+  .how{background:var(--navy);color:var(--white)}
+  .how .lead{color:#94A3B8}
+  .step{background:var(--navy2);border-radius:14px;padding:28px;border:1px solid #334155}
+  .step .num{display:inline-flex;width:42px;height:42px;border-radius:50%;background:var(--teal);color:var(--navy);font-weight:800;font-size:19px;align-items:center;justify-content:center;margin-bottom:14px}
+  .step h3{margin-bottom:8px;font-size:19px}
+  .step p{color:#CBD5E1;font-size:15px}
+
+  /* AUDIT */
+  .audit{background:linear-gradient(135deg,var(--navy) 0%,#134E4A 100%);color:var(--white);text-align:center}
+  .audit h2 em{color:var(--teal-b);font-style:normal}
+  .audit p{color:#CBD5E1;max-width:560px;margin:0 auto 30px}
+  .check{list-style:none;display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
+  .check li{font-size:15px;color:#E2E8F0}
+  .check li::before{content:"✓ ";color:var(--teal-b);font-weight:700}
+
+  /* CONTATTI */
+  .contacts{text-align:center}
+  .contacts .big{font-size:clamp(22px,3vw,30px);font-weight:700;margin:10px 0}
+  .contacts a{color:var(--teal);text-decoration:none}
+  .contacts .note{color:var(--grey);font-size:14px;margin-top:18px}
+
+  footer{background:var(--navy);color:#64748B;padding:26px 0;font-size:14px;text-align:center}
+  footer img{height:30px;vertical-align:middle;margin-right:10px;opacity:.85}
+</style>
+</head>
+<body>
+
+<!-- ══════ HERO ══════ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-txt">
+      <span class="badge">🔧 Per PMI e studi professionali · Verona e Mantova</span>
+      <h1>Il tuo informatico non risponde?<br><em>Da oggi hai un reparto IT.</em></h1>
+      <p class="sub">Gestione completa dell'informatica per piccole imprese: PC, rete, backup, posta e sicurezza. Un unico referente, tariffe chiare, senza sorprese.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contatti">Prenota l'audit gratuito</a>
+        <a class="btn btn-ghost" href="#come">Come funziona</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="assets/logo_dark.png" alt="Officina Digitale — logo" width="380">
+    </div>
+  </div>
+</header>
+
+<!-- ══════ PERCHÉ ══════ -->
+<section class="why" id="perche">
+  <div class="wrap">
+    <h2>Quanto costa quando l'informatica si ferma?</h2>
+    <p class="lead">Un PC bloccato, un backup mai provato, una mail sospetta: per una piccola azienda bastano poche ore di fermo per perdere più di quanto costerebbe prevenirle.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">🛟</div><h3>Assistenza rapida</h3><p>Rispondiamo nelle ore lavorative 8–18, di persona. Niente call center, niente ticket che spariscono.</p></div>
+      <div class="card"><div class="ico">💾</div><h3>Backup verificati</h3><p>Copie dei tuoi dati testate di routine: un backup non provato è come se non esistesse.</p></div>
+      <div class="card"><div class="ico">🔒</div><h3>Sicurezza concreta</h3><p>Antivirus, aggiornamenti, password e protezione dalla truffe via email: il necessario, spiegato bene.</p></div>
+      <div class="card"><div class="ico">📋</div><h3>Tariffe trasparenti</h3><p>Piani mensili chiari a partire da 150 €/mese. Sai sempre quanto spendi e cosa include.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ COME FUNZIONA ══════ -->
+<section class="how" id="come">
+  <div class="wrap">
+    <h2>Come funziona</h2>
+    <p class="lead">Tre passaggi, zero impegno iniziale.</p>
+    <div class="grid">
+      <div class="step"><span class="num">1</span><h3>Mi presenti la tua azienda</h3><p>Una telefonata di 10 minuti: cosa usi, cosa non funziona, cosa temi.</p></div>
+      <div class="step"><span class="num">2</span><h3>Audit gratuito di 30 minuti</h3><p>Controllo PC, rete, backup e sicurezza. Ti dico cosa è a rischio, senza gergo tecnico.</p></div>
+      <div class="step"><span class="num">3</span><h3>Proposta chiara</h3><p>Un piano con priorità e costi precisi. Decidi tu con calma, nessuna pressione.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ AUDIT ══════ -->
+<section class="audit" id="audit">
+  <div class="wrap">
+    <h2>L'audit è <em>gratuito e senza impegno</em></h2>
+    <p>Mezz'ora in azienda o da remoto, e sai esattamente dove stai con la tua informatica.</p>
+    <ul class="check">
+      <li>Stato dei PC e degli aggiornamenti</li>
+      <li>Backup: ci sono davvero?</li>
+      <li>Password e accessi</li>
+      <li>Rete e Wi-Fi</li>
+    </ul>
+    <a class="btn btn-primary" href="#contatti">Vuoi l'audit? Chiamami</a>
+  </div>
+</section>
+
+<!-- ══════ CONTATTI ══════ -->
+<section class="contacts" id="contatti">
+  <div class="wrap">
+    <h2>Parliamone</h2>
+    <p class="lead">Telefono o email, rispondo io. Se sono in intervento richiamo entro poche ore.</p>
+    <!-- TODO: inserire numero dedicato prima di attivare la pagina -->
+    <div class="big">📞 <a href="tel:+390000000000">+39 000 000 0000</a></div>
+    <div class="big">✉️ <a href="mailto:info@officinadigitale.it">info@officinadigitale.it</a></div>
+    <p class="note">Officina Digitale · Verona e Mantova · Lun–Ven 8:00–18:00</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo_orizzontale_small.png" alt=""><!-- decorativo -->
+    Officina Digitale · P.IVA — in attesa di attribuzione · Verona / Mantova
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Officina Digitale",
+  "description":"Assistenza informatica e gestione IT per PMI: audit di sicurezza gratuito, backup, supporto remoto e in sede.",
+  "areaServed":["Verona","Mantova"],
+  "telephone":"+39 0000000000",
+  "email":"info@officinadigitale.it",
+  "openingHours":"Mo-Fr 08:00-18:00"
+}
+</script>
+</body>
+</html>
