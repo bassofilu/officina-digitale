@@ -36,8 +36,8 @@
   .btn-primary{background:var(--teal);color:var(--navy)}
   .btn-ghost{border:2px solid #334155;color:#E2E8F0}
   .badge{display:inline-block;background:rgba(31,189,147,.14);color:var(--teal-b);border:1px solid rgba(31,189,147,.4);padding:6px 14px;border-radius:99px;font-size:14px;font-weight:600;margin-bottom:20px}
-  .brand{font-size:17px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#F8FAFC;margin-bottom:14px}
-  .brand em{color:var(--teal-b);font-style:normal}
+  .brand{display:flex;align-items:center;gap:14px;font-size:clamp(26px,3.5vw,34px);font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#F8FAFC;margin-bottom:16px;line-height:1.1}
+  .brand img{height:1.3em;width:auto;border-radius:10px}
 
   /* SEZIONI */
   section{padding:72px 0}
@@ -81,8 +81,8 @@
 <header class="hero">
   <div class="wrap">
     <div class="hero-txt">
-      <div class="brand">Officina Digitale <em>·</em> Verona e Mantova</div>
-      <span class="badge">🔧 Assistenza IT per PMI e studi professionali</span>
+      <div class="brand"><img src="assets/logo_dark.png" alt="">Officina Digitale</div>
+      <span class="badge">🔧 Assistenza IT per PMI e studi professionali · Verona e Mantova</span>
       <h1>Il tuo informatico non risponde?<br><em>Da oggi hai un reparto IT.</em></h1>
       <p class="sub">Gestione completa dell'informatica per piccole imprese: PC, rete, backup, posta e sicurezza. Un unico referente, tariffe chiare, senza sorprese.</p>
       <div class="cta-row">
@@ -144,7 +144,7 @@
     <h2>Parliamone</h2>
     <p class="lead">Telefono, rispondo io. Se sono in intervento richiamo entro poche ore.</p>
     <div class="big">📞 <a href="tel:+393488807755">+39 348 880 7755</a></div>
-    <p class="note">Officina Digitale · Verona e Mantova · Lun–Ven 8:00–18:00</p>
+    <p class="note">Officina Digitale · Verona e Mantova</p>
   </div>
 </section>
 
@@ -162,8 +162,7 @@
   "name":"Officina Digitale",
   "description":"Assistenza informatica e gestione IT per PMI: audit di sicurezza gratuito, backup, supporto remoto e in sede.",
   "areaServed":["Verona","Mantova"],
-  "telephone":"+393488807755",
-  "openingHours":"Mo-Fr 08:00-18:00"
+  "telephone":"+393488807755"
 }
 </script>
 </body>
