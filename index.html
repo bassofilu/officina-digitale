@@ -30,9 +30,10 @@
   .tagline{font-size:clamp(16px,2.1vw,21px);color:#CBD5E1;max-width:560px;margin-bottom:36px}
   .cta-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
   .btn{display:inline-block;padding:15px 30px;border-radius:99px;font-weight:700;font-size:17px;text-decoration:none;transition:transform .12s ease}
-  .btn:hover{transform:translateY(-2px)}
+  .btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(0)}
   .btn-primary{background:var(--teal);color:var(--navy)}
   .btn-ghost{border:2px solid rgba(226,232,240,.45);color:#E2E8F0}
+  .btn-tel{background:rgba(255,255,255,.1);color:#E2E8F0;border:2px solid rgba(226,232,240,.25)}
   .hero-down{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:1;color:#7C8CA5;font-size:30px;text-decoration:none;animation:bob 2.2s ease-in-out infinite}
   @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,9px)}}
 
@@ -61,11 +62,13 @@
   .check{list-style:none;display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
   .check li{font-size:15px;color:#E2E8F0}
   .check li::before{content:"✓ ";color:var(--teal-b);font-weight:700}
+  .audit .cta-row{margin-top:20px}
 
   /* CONTATTI */
   .contacts{text-align:center}
   .contacts .big{font-size:clamp(22px,3vw,30px);font-weight:700;margin:10px 0}
   .contacts a{color:var(--teal);text-decoration:none}
+  .contacts a:hover{text-decoration:underline}
   .contacts .note{color:var(--grey);font-size:14px;margin-top:18px}
 
   footer{background:var(--navy);color:#64748B;padding:26px 0;font-size:14px;text-align:center}
@@ -80,11 +83,12 @@
 <!-- ══════ HERO ══════ -->
 <header class="hero">
   <div class="hero-inner">
-    <img class="hero-logo" src="assets/logo_bianco_trasparente.png" alt="Officina Digitale">
+    <img class="hero-logo" src="assets/logo_bianco_trasparente.png" alt="Officina Digitale" width="300" height="auto">
     <h1>Officina Digitale</h1>
     <p class="tagline">Il reparto IT della tua PMI · assistenza, backup e sicurezza · Verona e Mantova</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="#contatti">Prenota l'audit gratuito</a>
+      <a class="btn btn-primary" href="tel:+393488807755">Prenota l'audit gratuito</a>
+      <a class="btn btn-tel" href="tel:+393488807755">📞 Chiama ora</a>
       <a class="btn btn-ghost" href="#come">Come funziona</a>
     </div>
   </div>
@@ -98,8 +102,8 @@
     <p class="lead">Un PC bloccato, un backup mai provato, una mail sospetta: per una piccola azienda bastano poche ore di fermo per perdere più di quanto costerebbe prevenirle.</p>
     <div class="grid">
       <div class="card"><div class="ico">🛟</div><h3>Assistenza rapida</h3><p>Rispondiamo nelle ore lavorative 8–18, di persona. Niente call center, niente ticket che spariscono.</p></div>
-      <div class="card"><div class="ico">💾</div><h3>Backup verificati</h3><p>Copie dei tuoi dati testate di routine: un backup non provato è come se non esistesse.</p></div>
-      <div class="card"><div class="ico">🔒</div><h3>Sicurezza concreta</h3><p>Antivirus, aggiornamenti, password e protezione dalla truffe via email: il necessario, spiegato bene.</p></div>
+      <div class="card"><div class="ico">💾</div><h3>Backup verificati</h3><p>Copie dei tuoi dati verificate di routine: un backup non provato è come se non esistesse.</p></div>
+      <div class="card"><div class="ico">🔒</div><h3>Sicurezza concreta</h3><p>Antivirus, aggiornamenti, password e protezione dalle truffe via email: il necessario, spiegato bene.</p></div>
       <div class="card"><div class="ico">📋</div><h3>Tariffe trasparenti</h3><p>Piani mensili chiari a partire da 150 €/mese. Sai sempre quanto spendi e cosa include.</p></div>
     </div>
   </div>
@@ -111,7 +115,7 @@
     <h2>Come funziona</h2>
     <p class="lead">Tre passaggi, zero impegno iniziale.</p>
     <div class="grid">
-      <div class="step"><span class="num">1</span><h3>Mi presenti la tua azienda</h3><p>Una telefonata di 10 minuti: cosa usi, cosa non funziona, cosa temi.</p></div>
+      <div class="step"><span class="num">1</span><h3>Raccontami la tua azienda</h3><p>Una telefonata di 10 minuti: cosa usi, cosa non funziona, cosa ti preoccupa.</p></div>
       <div class="step"><span class="num">2</span><h3>Audit gratuito di 30 minuti</h3><p>Controllo PC, rete, backup e sicurezza. Ti dico cosa è a rischio, senza gergo tecnico.</p></div>
       <div class="step"><span class="num">3</span><h3>Proposta chiara</h3><p>Un piano con priorità e costi precisi. Decidi tu con calma, nessuna pressione.</p></div>
     </div>
@@ -129,7 +133,10 @@
       <li>Password e accessi</li>
       <li>Rete e Wi-Fi</li>
     </ul>
-    <a class="btn btn-primary" href="#contatti">Vuoi l'audit? Chiamami</a>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+393488807755">Prenota l'audit</a>
+      <a class="btn btn-tel" href="mailto:info@officinadigitalevr.it">✉️ Scrivimi</a>
+    </div>
   </div>
 </section>
 
@@ -139,13 +146,14 @@
     <h2>Parliamone</h2>
     <p class="lead">Telefono, rispondo io. Se sono in intervento richiamo entro poche ore.</p>
     <div class="big">📞 <a href="tel:+393488807755">+39 348 880 7755</a></div>
+    <div class="big" style="font-size:clamp(17px,2.2vw,22px)">✉️ <a href="mailto:info@officinadigitalevr.it">info@officinadigitalevr.it</a></div>
     <p class="note">Officina Digitale · Verona e Mantova</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <img src="assets/logo_orizzontale_small.png" alt=""><!-- decorativo -->
+    <img src="assets/logo_orizzontale_small.png" alt="" role="presentation" width="auto" height="30">
     Officina Digitale · Verona / Mantova
   </div>
 </footer>
@@ -155,9 +163,12 @@
   "@context":"https://schema.org",
   "@type":"LocalBusiness",
   "name":"Officina Digitale",
+  "url":"https://officinadigitalevr.it",
   "description":"Assistenza informatica e gestione IT per PMI: audit di sicurezza gratuito, backup, supporto remoto e in sede.",
   "areaServed":["Verona","Mantova"],
-  "telephone":"+393488807755"
+  "telephone":"+393488807755",
+  "email":"info@officinadigitalevr.it",
+  "priceRange":"€€"
 }
 </script>
 </body>
